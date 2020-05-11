@@ -23,6 +23,9 @@
 
 #include "textflag.h"
 
+#ifdef GOARCH_arm
+#define JMP B
+#endif
 #ifdef GOARCH_ppc64
 #define JMP BR
 #endif
